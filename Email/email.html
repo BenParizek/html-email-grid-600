@@ -10,7 +10,8 @@
 		----------------------------------------------------------- */
 		
 		html, body, div, span, p, em, img, strong, sub, sup,
-		table, tbody, tfoot, thead, tr, th, td {
+		table, tbody, tfoot, thead, tr, th, td, 
+		h1, h2, h3, h4, h5, h6 {
 		  margin:0;
 		  padding:0;
 		  border:0;
@@ -34,7 +35,18 @@
 			font-size:12px;
 			line-height:18px;
 		}
-
+		
+		h1 { font-size:20px; line-height:22px; }
+		h2 {  }
+		h3 {  }
+		h4 {  }
+		h5 {  }
+		h6 {  }
+		
+		/* Style default view online and footer... adjust as necessary 
+		   These <a> tag styles our targeted for Campaign Monitor as the <webversion> and
+		   <unsubscribe> tags don't allow us to place a class on the <a> tag
+		*/
 		td.view_online, td.view_online p {
 			color:#999999;
 			font-size:10px;
@@ -103,11 +115,15 @@
 
 <br />
 
+<h1>Basic Columns</h1>
+<br />
+<br />
+
 <!-- BEGIN 1 COLUMN TABLE -->
 <table width="600" border="0" cellspacing="0" cellpadding="0">
     <tr>
        <td>
-       	1 col
+       	600px
          
        </td>
     </tr>
@@ -120,11 +136,11 @@
 <table width="600" border="0" cellspacing="0" cellpadding="0">
 	<tr>
        	<td width="300" valign="top">
-       	2 col
+       	300px
          
        	</td>
 	   	<td width="300" valign="top">
-		2 col
+		300px
 
        	</td>
     </tr>
@@ -137,15 +153,15 @@
 <table width="600" border="0" cellspacing="0" cellpadding="0">	
     <tr>
 		<td width="200" valign="top">
-	    3 col
+	    200px
 
        	</td>
        	<td width="200" valign="top">
-       	3 col
+       	200px
          
        	</td>
 	   	<td width="200" valign="top">
-		3 col
+		200px
 
        	</td>
     </tr>
@@ -153,37 +169,105 @@
 <!-- END 3 COLUMN TABLE  -->
 
 <br />
+<br />
 
-<!-- BEGIN 1 COLUMN TABLE -->
+<h1>Sidebars</h1>
+<br />
+<br />
+
+<!-- BEGIN 2 COLUMN TABLE -->
 <table width="600" border="0" cellspacing="0" cellpadding="0">
 	<tr>
-       	<td>
-	
-			<!-- BEGIN TABLE-BASED BULLET LIST -->
-			<table width="600" border="0" cellspacing="0" cellpadding="0">
-			    <tr>
-			       <td valign="top" class="bullet">&bull;&nbsp;</td>
-			       <td valign="top" class="bullet_item"></td>
-			    </tr>
-			    <tr>
-			       <td valign="top" class="bullet">&bull;&nbsp;</td>
-			       <td valign="top" class="bullet_item"></td>
-			    </tr>
-			    <tr>
-			       <td valign="top" class="bullet">&bull;&nbsp;</td>
-			       <td valign="top" class="bullet_item"></td>
-			    </tr>
-			    <tr>
-			       <td valign="top" class="bullet">&bull;&nbsp;</td>
-			       <td valign="top" class="bullet_item"></td>
-			    </tr>
-			</table>
-			<!-- END TABLE-BASED BULLET LIST -->
-			
+       	<td width="200" valign="top">
+       	200px
+         
+       	</td>
+	   	<td width="400" valign="top">
+		400px
+
        	</td>
     </tr>
 </table>
-<!-- END 1 COLUMN TABLE -->
+<!-- END 2 COLUMN TABLE  -->
+
+<br />
+
+<!-- BEGIN 2 COLUMN TABLE -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+       	<td width="400" valign="top">
+       	400px
+         
+       	</td>
+	   	<td width="200" valign="top">
+		200px
+
+       	</td>
+    </tr>
+</table>
+<!-- END 2 COLUMN TABLE  -->
+
+<br />
+
+
+<h1>Bullet Lists</h1>
+<br />
+<br />
+
+<!-- BEGIN 2 COLUMN TABLE -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+       	<td width="300" valign="top">
+	
+       		<!-- BEGIN TABLE-BASED BULLET LIST -->
+			<table width="300" border="0" cellspacing="0" cellpadding="0">
+			    <tr>
+			       <td valign="top" class="bullet">&bull;&nbsp;</td>
+			       <td valign="top" class="bullet_item">Lorem ipsum dolor sit amet.</td>
+			    </tr>
+			    <tr>
+			       <td valign="top" class="bullet">&bull;&nbsp;</td>
+			       <td valign="top" class="bullet_item">Lorem ipsum dolor sit amet.</td>
+			    </tr>
+			    <tr>
+			       <td valign="top" class="bullet">&bull;&nbsp;</td>
+			       <td valign="top" class="bullet_item">Lorem ipsum dolor sit amet.</td>
+			    </tr>
+			    <tr>
+			       <td valign="top" class="bullet">&bull;&nbsp;</td>
+			       <td valign="top" class="bullet_item">Lorem ipsum dolor sit amet.</td>
+			    </tr>
+			</table>
+			<!-- END TABLE-BASED BULLET LIST -->
+         
+       	</td>
+	   	<td width="300" valign="top">
+			
+			<!-- BEGIN TABLE-BASED BULLET LIST -->
+			<table width="300" border="0" cellspacing="0" cellpadding="0">
+			    <tr>
+			       <td valign="top" class="bullet image_td"><img src="images/lightish-red.gif" width="15" height="15" border="0" alt="" /></td>
+			       <td valign="top" class="bullet_item">Lorem ipsum dolor sit amet.</td>
+			    </tr>
+			    <tr>
+			       <td valign="top" class="bullet image_td"><img src="images/lightish-red.gif" width="15" height="15" border="0" alt="" /></td>
+			       <td valign="top" class="bullet_item">Lorem ipsum dolor sit amet.</td>
+			    </tr>
+			    <tr>
+			       <td valign="top" class="bullet image_td"><img src="images/lightish-red.gif" width="15" height="15" border="0" alt="" /></td>
+			       <td valign="top" class="bullet_item">Lorem ipsum dolor sit amet.</td>
+			    </tr>
+			    <tr>
+			       <td valign="top" class="bullet image_td"><img src="images/lightish-red.gif" width="15" height="15" border="0" alt="" /></td>
+			       <td valign="top" class="bullet_item">Lorem ipsum dolor sit amet.</td>
+			    </tr>
+			</table>
+			<!-- END TABLE-BASED BULLET LIST -->
+
+       	</td>
+    </tr>
+</table>
+<!-- END 2 COLUMN TABLE  -->
 
 
 
