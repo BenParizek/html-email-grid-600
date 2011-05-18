@@ -6,7 +6,21 @@
 	<style type="text/css" media="screen">
 		
 		/* -----------------------------------------------------------
+		Grid 600: 12 Column Email Template
+		
+		Authors:
+		License: 
+		----------------------------------------------------------- */
+		
+		/* -----------------------------------------------------------
+		Some email clients, like Gmail, will strip out the css in your <head> section
+		Be sure your final email places the css inline using a tool like: http://premailer.dialect.ca/ 
+		----------------------------------------------------------- */
+		
+		/* -----------------------------------------------------------
 		HTML Email Reset CSS
+		Email clients interpret the default styles of some elements differently
+		These styles try to create a common baseline for us to start from.
 		----------------------------------------------------------- */
 		
 		html, body, div, span, p, em, img, strong, sub, sup,
@@ -27,7 +41,8 @@
 		
 		
 		/* -----------------------------------------------------------
-		Typography: some default styles to get us started
+		Typography
+		This section styles our text.
 		----------------------------------------------------------- */
 
 		td, td p {
@@ -43,9 +58,9 @@
 		h5 {  }
 		h6 {  }
 		
-		/* Style default view online and footer... adjust as necessary 
-		   These <a> tag styles our targeted for Campaign Monitor as the <webversion> and
-		   <unsubscribe> tags don't allow us to place a class on the <a> tag
+		/* 	Style default view online and footer... adjust as necessary 
+		   	These <a> tag styles our targeted for Campaign Monitor as the <webversion> and
+		   	<unsubscribe> tags don't allow us to place a class on the <a> tag
 		*/
 		td.view_online, td.view_online p {
 			color:#999999;
@@ -72,19 +87,20 @@
 
 		/* -----------------------------------------------------------
 		Layout
+		This section styles the layout.
 		----------------------------------------------------------- */
 
-		/* Use the image_td class on a td tag when it only contains
-		   an image and nothing else. */
+		/* 	Use the image_td class on a td tag when it only contains
+		   	an image and nothing else. */
 		td.image_td img { font-size:0px; line-height:0px; }
 
-		/* Set p tags and bulleted lists to have the same spacing
-		   use p tags for general text content, but not within bulleted lists.
-		   Text for bulleted lists can just remain wrapped in the td tags */
+		/* 	Set p tags and bulleted lists to have the same spacing
+		   	use p tags for general text content, but not within bulleted lists.
+		   	Text for bulleted lists can just remain wrapped in the td tags */
 		td p { margin-bottom:12px; }
 		td.bullet, td.bullet_item { padding-bottom:12px; }
 
-		/* Set width of bullet column */
+		/* 	Set width of bullet column */
 		td.bullet { width:10px; }
 
 		td.view_online { padding-bottom:4px; }
@@ -115,6 +131,46 @@
 
 <br />
 
+
+<!-- 
+	How to think about these modules for snippets?
+	
+	Full width modules
+	c = column
+		l = left (only applies to two column table)
+		r = right (only applies to two column table)
+	i = image
+	f = full with no gutters
+	
+	Sub modules, that go inside table cells
+	b = bullet
+		
+	1ci = 1 column image with gutters
+	1cif = 1 column image with no gutters
+	
+	
+	e600-12
+	e600-16
+	
+	1col  <- full column, what do we do for column with gutters?
+	1colimg
+	
+	
+	2col
+	3col
+	
+	2colleft
+	2colright
+	
+	2colleftimg
+	2colrightimg
+	
+	ebull
+	ebullimg
+	
+ -->
+
+
 <h1>Basic Columns</h1>
 <br />
 <br />
@@ -129,6 +185,20 @@
     </tr>
 </table>
 <!-- END 1 COLUMN TABLE -->
+
+<!-- BEGIN 1 COLUMN TABLE WITH GUTTERS -->
+<table width="580" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+		<td width="10">&nbsp;</td>
+       	<td width="580">
+       	580px with 10px gutters on each side
+         
+       	</td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 1 COLUMN TABLE WITH GUTTERS -->
+
 
 <br />
 
@@ -146,6 +216,24 @@
     </tr>
 </table>
 <!-- END 2 COLUMN TABLE  -->
+
+<!-- BEGIN 2 COLUMN TABLE WITH GUTTERS -->
+<table width="560" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="10">&nbsp;</td>
+       	<td width="280" valign="top">
+       	280px with 10px gutters on each side
+         
+       	</td>
+		<td width="20">&nbsp;</td>
+	   	<td width="280" valign="top">
+		280px with 10px gutters on each side
+
+       	</td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 2 COLUMN TABLE WITH GUTTERS  -->
 
 <br />
 
@@ -167,6 +255,29 @@
     </tr>
 </table>
 <!-- END 3 COLUMN TABLE  -->
+
+<!-- BEGIN 3 COLUMN TABLE WITH GUTTERS   -->
+<table width="540" border="0" cellspacing="0" cellpadding="0">	
+    <tr>
+		<td width="10">&nbsp;</td>
+		<td width="180" valign="top">
+	    180px with 10px gutters on each side
+
+       	</td>
+		<td width="20">&nbsp;</td>
+       	<td width="180" valign="top">
+       	180px with 10px gutters on each side
+         
+       	</td>
+		<td width="20">&nbsp;</td>
+	   	<td width="180" valign="top">
+		180px with 10px gutters on each side
+
+       	</td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 3 COLUMN TABLE WITH GUTTERS  -->
 
 <br />
 <br />
@@ -190,6 +301,24 @@
 </table>
 <!-- END 2 COLUMN TABLE  -->
 
+<!-- BEGIN 2 COLUMN TABLE WITH GUTTERS -->
+<table width="560" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="10">&nbsp;</td>
+       	<td width="180" valign="top">
+       	180px with 10px gutters
+         
+       	</td>
+		<td width="20">&nbsp;</td>
+	   	<td width="380" valign="top">
+		380px with 10px gutters
+
+       	</td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 2 COLUMN TABLE WITH GUTTERS  -->
+
 <br />
 
 <!-- BEGIN 2 COLUMN TABLE -->
@@ -207,8 +336,39 @@
 </table>
 <!-- END 2 COLUMN TABLE  -->
 
+<!-- BEGIN 2 COLUMN TABLE WITH GUTTERS -->
+<table width="560" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="10">&nbsp;</td>
+		<td width="380" valign="top">
+		380px with 10px gutters
+
+       	</td>
+		<td width="20">&nbsp;</td>
+       	<td width="180" valign="top">
+       	180px with 10px gutters
+         
+       	</td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 2 COLUMN TABLE WITH GUTTERS  -->
+
+
 <br />
 
+<!-- DIVIDERS 
+
+Not sure how best to do these.  
+How do <hr> elements render in different email clients?
+Spacer image?
+If image has lines they need to be one color.	
+	
+-->
+
+
+
+<br />
 
 <h1>Bullet Lists</h1>
 <br />
