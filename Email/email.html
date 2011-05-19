@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Grid 600: Party like it's 1990</title>
+	<title>Grid 600: 12 Column Template</title>
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 	<style type="text/css" media="screen">
@@ -57,7 +57,7 @@
 		h4 {  }
 		h5 {  }
 		h6 {  }
-		
+
 		/* 	Style default view online and footer... adjust as necessary 
 		   	These <a> tag styles our targeted for Campaign Monitor as the <webversion> and
 		   	<unsubscribe> tags don't allow us to place a class on the <a> tag
@@ -105,259 +105,223 @@
 
 		td.view_online { padding-bottom:4px; }
 		td.footer { padding:12px 20px 20px; }
+		
 	</style>
 	
 </head>
 <body>
 <!-- BEGIN CONTAINER TABLE --><table width="100%" border="0" cellspacing="0" cellpadding="0" ><tr><td align="center">
 
-<!-- BEGIN VIEW ONLINE -->
-<table width="600" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-       <td align="right" class="view_online">
-         <a href="" target="_blank">View Online</a>
-       </td>
-    </tr>
-</table>
-<!-- END VIEW ONLINE -->
-
-<!-- BEGIN HEADER IMAGE -->
-<table width="600" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-       <td class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="600" height="150" border="0" alt="" /></a></td>
-    </tr>
-</table>
-<!-- END HEADER IMAGE -->
-
 <br />
+<br />
+
+<!-- BEGIN 1 COLUMN MODULE (12 Column Grid), TEXT, FULL -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+       	<td width="580">
+       		
+			<h1>12 Column Grid: Standard Columns</h1>
+			<br />
+
+       	</td>
+    </tr>
+</table>
+<!-- END 1 COLUMN MODULE (12 Column Grid), TEXT, FULL -->
 
 
 <!-- 
-	How to think about these modules for snippets?
-	
-	Full width modules
-	c = column
-		l = left (only applies to two column table)
-		r = right (only applies to two column table)
-	i = image
-	f = full with no gutters
-	
-	Sub modules, that go inside table cells
-	b = bullet
-		
-	1ci = 1 column image with gutters
-	1cif = 1 column image with no gutters
-	
-	
-	e600-12
-	e600-16
-	
-	1col  <- full column, what do we do for column with gutters?
-	1colimg
-	
-	
-	2col
-	3col
-	
-	2colleft
-	2colright
-	
-	2colleftimg
-	2colrightimg
-	
-	ebull
-	ebullimg
-	
+	BEGIN 1 COLUMN MODULE (12 Column Grid), IMAGE, FULL
+	An "image" module contains an image
+	A "full" module is a full 600px wide table with no gutters
  -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+       <td valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="600" height="150" border="0" alt="" /></a></td>
+    </tr>
+</table>
+<!-- END 1 COLUMN MODULE (12 Column Grid), IMAGE, FULL -->
 
-
-<h1>Basic Columns</h1>
 <br />
-<br />
 
-<!-- BEGIN 1 COLUMN TABLE -->
+<!-- 
+	BEGIN 1 COLUMN MODULE (12 Column Grid), TEXT, FULL 
+	A "text" module can be used for... text content! 
+	A "full" module is a full 600px wide table with no gutters
+-->
 <table width="600" border="0" cellspacing="0" cellpadding="0">
     <tr>
        <td>
-       	600px
+       	12 COLUMN MODULE, TEXT, FULL
          
        </td>
     </tr>
 </table>
-<!-- END 1 COLUMN TABLE -->
+<!-- END 1 COLUMN MODULE (12 Column Grid), TEXT, FULL  -->
 
-<!-- BEGIN 1 COLUMN TABLE WITH GUTTERS -->
-<table width="580" border="0" cellspacing="0" cellpadding="0">
+<br />
+
+<!-- 
+	BEGIN 1 COLUMN MODULE (12 Column Grid), IMAGE, GUTTERS
+	An "image" module contains an image
+	A "gutters" module is a 580px wide table with 10px gutters on each side
+ -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+		<td width="10">&nbsp;</td>
+       	<td width="580" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="580" height="150" border="0" alt="" /></a></td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 1 COLUMN MODULE (12 Column Grid), IMAGE, GUTTERS -->
+
+<br />
+
+<!-- 
+	BEGIN 1 COLUMN MODULE (12 Column Grid), TEXT, GUTTERS
+	A "text" module can be used for text content
+	A "gutters" module is a 580px wide table with 10px gutters on each side
+ -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
     <tr>
 		<td width="10">&nbsp;</td>
        	<td width="580">
-       	580px with 10px gutters on each side
-         
+       		12 COLUMN MODULE, TEXT, GUTTERS
+
        	</td>
 		<td width="10">&nbsp;</td>
     </tr>
 </table>
-<!-- END 1 COLUMN TABLE WITH GUTTERS -->
+<!-- END 1 COLUMN MODULE (12 Column Grid), TEXT, GUTTERS -->
 
 
 <br />
 
-<!-- BEGIN 2 COLUMN TABLE -->
+<!-- BEGIN 2 COLUMN MODULE (2, 6 Column Grids), IMAGE, GUTTERS -->
 <table width="600" border="0" cellspacing="0" cellpadding="0">
 	<tr>
-       	<td width="300" valign="top">
-       	300px
-         
-       	</td>
-	   	<td width="300" valign="top">
-		300px
-
-       	</td>
+		<td width="10">&nbsp;</td>
+       	<td width="280" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="280" height="100" border="0" alt="" /></a></td>
+		<td width="20">&nbsp;</td>
+	   	<td width="280" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="280" height="100" border="0" alt="" /></a></td>
+		<td width="10">&nbsp;</td>
     </tr>
 </table>
-<!-- END 2 COLUMN TABLE  -->
+<!-- END 2 COLUMN MODULE (2, 6 Column Grids), IMAGE, GUTTERS   -->
 
-<!-- BEGIN 2 COLUMN TABLE WITH GUTTERS -->
-<table width="560" border="0" cellspacing="0" cellpadding="0">
+<br />
+
+<!-- BEGIN 2 COLUMN MODULE (2, 6 Column Grids), TEXT, GUTTERS  -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
 	<tr>
 		<td width="10">&nbsp;</td>
        	<td width="280" valign="top">
-       	280px with 10px gutters on each side
+       	2 COLUMN MODULE (2, 6 Column Grids), TEXT, GUTTERS
          
        	</td>
 		<td width="20">&nbsp;</td>
 	   	<td width="280" valign="top">
-		280px with 10px gutters on each side
+		2 COLUMN MODULE (2, 6 Column Grids), TEXT, GUTTERS
 
        	</td>
 		<td width="10">&nbsp;</td>
     </tr>
 </table>
-<!-- END 2 COLUMN TABLE WITH GUTTERS  -->
+<!-- END 2 COLUMN MODULE (2, 6 Column Grids), TEXT, GUTTERS -->
 
 <br />
 
-<!-- BEGIN 3 COLUMN TABLE  -->
+<!-- BEGIN 3 COLUMN MODULE (3, 4 Column Grids), IMAGE, GUTTERS -->
 <table width="600" border="0" cellspacing="0" cellpadding="0">	
     <tr>
-		<td width="200" valign="top">
-	    200px
-
-       	</td>
-       	<td width="200" valign="top">
-       	200px
-         
-       	</td>
-	   	<td width="200" valign="top">
-		200px
-
-       	</td>
+		<td width="10">&nbsp;</td>
+		<td width="180" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="180" height="60" border="0" alt="" /></a></td>
+		<td width="20">&nbsp;</td>
+       	<td width="180" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="180" height="60" border="0" alt="" /></a></td>
+		<td width="20">&nbsp;</td>
+	   	<td width="180" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="180" height="60" border="0" alt="" /></a></td>
+		<td width="10">&nbsp;</td>
     </tr>
 </table>
-<!-- END 3 COLUMN TABLE  -->
+<!-- END 3 COLUMN MODULE (3, 4 Column Grids), IMAGE, GUTTERS -->
 
-<!-- BEGIN 3 COLUMN TABLE WITH GUTTERS   -->
-<table width="540" border="0" cellspacing="0" cellpadding="0">	
+<br />
+
+<!-- BEGIN 3 COLUMN MODULE (3, 4 Column Grids), TEXT, GUTTERS -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">	
     <tr>
 		<td width="10">&nbsp;</td>
 		<td width="180" valign="top">
-	    180px with 10px gutters on each side
+	    3 COLUMN MODULE (3, 4 Column Grids), TEXT, GUTTERS
 
        	</td>
 		<td width="20">&nbsp;</td>
        	<td width="180" valign="top">
-       	180px with 10px gutters on each side
+       	3 COLUMN MODULE (3, 4 Column Grids), TEXT, GUTTERS
          
        	</td>
 		<td width="20">&nbsp;</td>
 	   	<td width="180" valign="top">
-		180px with 10px gutters on each side
+		3 COLUMN MODULE (3, 4 Column Grids), TEXT, GUTTERS
 
        	</td>
 		<td width="10">&nbsp;</td>
     </tr>
 </table>
-<!-- END 3 COLUMN TABLE WITH GUTTERS  -->
+<!-- END 3 COLUMN MODULE (3, 4 Column Grids), TEXT, GUTTERS -->
 
 <br />
-<br />
 
-<h1>Sidebars</h1>
-<br />
-<br />
-
-<!-- BEGIN 2 COLUMN TABLE -->
-<table width="600" border="0" cellspacing="0" cellpadding="0">
-	<tr>
-       	<td width="200" valign="top">
-       	200px
-         
-       	</td>
-	   	<td width="400" valign="top">
-		400px
-
-       	</td>
-    </tr>
-</table>
-<!-- END 2 COLUMN TABLE  -->
-
-<!-- BEGIN 2 COLUMN TABLE WITH GUTTERS -->
-<table width="560" border="0" cellspacing="0" cellpadding="0">
-	<tr>
+<!-- BEGIN 4 COLUMN MODULE (4, 3 Column Grids), IMAGE, GUTTERS -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">	
+    <tr>
 		<td width="10">&nbsp;</td>
-       	<td width="180" valign="top">
-       	180px with 10px gutters
-         
-       	</td>
+		<td width="130" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="130" height="40" border="0" alt="" /></a></td>
 		<td width="20">&nbsp;</td>
-	   	<td width="380" valign="top">
-		380px with 10px gutters
-
-       	</td>
+       	<td width="130" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="130" height="40" border="0" alt="" /></a></td>
+		<td width="20">&nbsp;</td>
+	   	<td width="130" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="130" height="40" border="0" alt="" /></a></td>
+		<td width="20">&nbsp;</td>
+	   	<td width="130" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="130" height="40" border="0" alt="" /></a></td>
 		<td width="10">&nbsp;</td>
     </tr>
 </table>
-<!-- END 2 COLUMN TABLE WITH GUTTERS  -->
+<!-- END 4 COLUMN MODULE (4, 3 Column Grids), IMAGE, GUTTERS -->
 
 <br />
 
-<!-- BEGIN 2 COLUMN TABLE -->
-<table width="600" border="0" cellspacing="0" cellpadding="0">
-	<tr>
-       	<td width="400" valign="top">
-       	400px
-         
-       	</td>
-	   	<td width="200" valign="top">
-		200px
-
-       	</td>
-    </tr>
-</table>
-<!-- END 2 COLUMN TABLE  -->
-
-<!-- BEGIN 2 COLUMN TABLE WITH GUTTERS -->
-<table width="560" border="0" cellspacing="0" cellpadding="0">
-	<tr>
+<!-- BEGIN 4 COLUMN MODULE (4, 3 Column Grids), TEXT, GUTTERS -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">	
+    <tr>
 		<td width="10">&nbsp;</td>
-		<td width="380" valign="top">
-		380px with 10px gutters
+		<td width="130" valign="top">
+	    4 COLUMN MODULE (4, 3 Column Grids), TEXT, GUTTERS
 
        	</td>
 		<td width="20">&nbsp;</td>
-       	<td width="180" valign="top">
-       	180px with 10px gutters
+       	<td width="130" valign="top">
+       	4 COLUMN MODULE (4, 3 Column Grids), TEXT, GUTTERS
          
+       	</td>
+		<td width="20">&nbsp;</td>
+	   	<td width="130" valign="top">
+		4 COLUMN MODULE (4, 3 Column Grids), TEXT, GUTTERS
+
+       	</td>
+		<td width="20">&nbsp;</td>
+	   	<td width="130" valign="top">
+		4 COLUMN MODULE (4, 3 Column Grids), TEXT, GUTTERS
+
        	</td>
 		<td width="10">&nbsp;</td>
     </tr>
 </table>
-<!-- END 2 COLUMN TABLE WITH GUTTERS  -->
-
+<!-- END 4 COLUMN MODULE (4, 3 Column Grids), TEXT, GUTTERS -->
 
 <br />
 
-<!-- DIVIDERS 
+<!-- 
+	
+ADD MODULE: DIVIDERS 
 
 Not sure how best to do these.  
 How do <hr> elements render in different email clients?
@@ -366,13 +330,335 @@ If image has lines they need to be one color.
 	
 -->
 
+<br />
+<br />
 
+<!-- BEGIN 1 COLUMN MODULE (12 Column Grid), TEXT, FULL -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+       <td>
+	
+       	<h1>12 Column Grid: Sidebar-based 2 Column Modules</h1>
+		<br />
+		<br />
+         
+       </td>
+    </tr>
+</table>
+<!-- END 1 COLUMN MODULE (12 Column Grid), TEXT, FULL  -->
+
+
+
+<!-- BEGIN 2 COLUMN MODULE (2, 6 Column Grids), IMAGE, GUTTERS, LEFT -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="10">&nbsp;</td>
+       	<td width="280" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="280" height="100" border="0" alt="" /></a></td>
+		<td width="20">&nbsp;</td>
+		<td width="280" valign="top">
+		2 COLUMN MODULE (2, 6 Column Grids), IMAGE, GUTTERS, LEFT
+
+       	</td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 2 COLUMN MODULE (2, 6 Column Grids), IMAGE, GUTTERS, LEFT   -->
 
 <br />
 
-<h1>Bullet Lists</h1>
+<!-- BEGIN 2 COLUMN MODULE (2, 6 Column Grids), TEXT, GUTTERS, RIGHT  -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="10">&nbsp;</td>
+       	<td width="280" valign="top">
+       	2 COLUMN MODULE (2, 6 Column Grids), IMAGE, GUTTERS, RIGHT 
+         
+       	</td>
+		<td width="20">&nbsp;</td>
+		
+	   	<td width="280" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="280" height="100" border="0" alt="" /></a></td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 2 COLUMN MODULE (2, 6 Column Grids), TEXT, GUTTERS, RIGHT -->
+
+<br />
+
+<!-- BEGIN 2 COLUMN MODULE (4 col, 8 col grids), IMAGE, GUTTERS, LEFT -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">	
+    <tr>
+		<td width="10">&nbsp;</td>
+		<td width="180" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="180" height="60" border="0" alt="" /></a></td>
+		<td width="20">&nbsp;</td>
+       	<td width="380" valign="top">
+	    2 COLUMN MODULE (4 col, 8 col grids), IMAGE, GUTTERS, LEFT 
+
+       	</td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 2 COLUMN MODULE (4 col, 8 col grids), IMAGE, GUTTERS, LEFT -->
+
+<br />
+
+<!-- BEGIN 2 COLUMN MODULE (4 col, 8 col grids), IMAGE, GUTTERS, RIGHT -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">	
+    <tr>
+		<td width="10">&nbsp;</td>
+		<td width="380" valign="top">
+	    2 COLUMN MODULE (4 col, 8 col grids), IMAGE, GUTTERS, RIGHT 
+
+       	</td>
+		<td width="20">&nbsp;</td>
+	   	<td width="180" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="180" height="60" border="0" alt="" /></a></td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 2 COLUMN MODULE (4 col, 8 col grids), IMAGE, GUTTERS, RIGHT -->
+
+<br />
+
+<!-- BEGIN 2 COLUMN MODULE (4 col, 8 col grids), TEXT, GUTTERS, LEFT -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">	
+    <tr>
+		<td width="10">&nbsp;</td>
+		<td width="180" valign="top">
+		2 COLUMN MODULE (4 col, 8 col grids), IMAGE, GUTTERS, LEFT 
+
+       	</td>
+		<td width="20">&nbsp;</td>
+       	<td width="380" valign="top">
+	    2 COLUMN MODULE (4 col, 8 col grids), IMAGE, GUTTERS, LEFT 
+
+       	</td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 2 COLUMN MODULE (4 col, 8 col grids), TEXT, GUTTERS, LEFT -->
+
+<br />
+
+<!-- BEGIN 2 COLUMN MODULE (4 col, 8 col grids), TEXT, GUTTERS, RIGHT -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">	
+    <tr>
+		<td width="10">&nbsp;</td>
+		<td width="380" valign="top">
+	    2 COLUMN MODULE (4 col, 8 col grids), TEXT, GUTTERS, RIGHT 
+
+       	</td>
+		<td width="20">&nbsp;</td>
+	   	<td width="180" valign="top">
+		2 COLUMN MODULE (4 col, 8 col grids), TEXT, GUTTERS, RIGHT 
+
+       	</td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 2 COLUMN MODULE (4 col, 8 col grids), TEXT, GUTTERS, RIGHT -->
+
+<br />
+
+<!-- BEGIN 2 COLUMN MODULE (3 col, 9 col Grids), IMAGE, GUTTERS, LEFT -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">	
+    <tr>
+		<td width="10">&nbsp;</td>
+		<td width="130" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="130" height="40" border="0" alt="" /></a></td>
+		<td width="20">&nbsp;</td>
+       	<td width="430" valign="top">
+	    2 COLUMN MODULE (3 col, 9 col Grids), IMAGE, GUTTERS, LEFT
+
+       	</td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 2 COLUMN MODULE (3 col, 9 col Grids), IMAGE, GUTTERS, LEFT -->
+
+<br />
+
+<!-- BEGIN 2 COLUMN MODULE (3col, 9 col Grids), IMAGE, GUTTERS, RIGHT -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">	
+    <tr>
+		<td width="10">&nbsp;</td>
+		<td width="430" valign="top">
+	    2 COLUMN MODULE (3 col, 9 col Grids), IMAGE, GUTTERS, RIGHT
+
+       	</td>
+		<td width="20">&nbsp;</td>
+	   	<td width="130" valign="top" class="image_td"><a href="#" target="_blank"><img src="images/blue.gif" width="130" height="40" border="0" alt="" /></a></td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 2 COLUMN MODULE (3col, 9 col Grids), IMAGE, GUTTERS, RIGHT -->
+
+<br />
+
+<!-- BEGIN 2 COLUMN MODULE (3 col, 9 col Grids), TEXT, GUTTERS, LEFT -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">	
+    <tr>
+		<td width="10">&nbsp;</td>
+		<td width="130" valign="top">
+       	2 COLUMN MODULE (3 col, 9 col Grids), IMAGE, GUTTERS, LEFT
+         
+       	</td>
+		<td width="20">&nbsp;</td>
+       	<td width="430" valign="top">
+	    2 COLUMN MODULE (3 col, 9 col Grids), IMAGE, GUTTERS, LEFT
+
+       	</td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 2 COLUMN MODULE (3 col, 9 col Grids), TEXT, GUTTERS, LEFT -->
+
+<br />
+
+<!-- BEGIN 2 COLUMN MODULE (3col, 9 col Grids), TEXT, GUTTERS, RIGHT -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">	
+    <tr>
+		<td width="10">&nbsp;</td>
+		<td width="430" valign="top">
+	    2 COLUMN MODULE (3 col, 9 col Grids), IMAGE, GUTTERS, RIGHT
+
+       	</td>
+		<td width="20">&nbsp;</td>
+	   	<td width="130" valign="top">
+       	2 COLUMN MODULE (3 col, 9 col Grids), IMAGE, GUTTERS, RIGHT
+         
+       	</td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 2 COLUMN MODULE (3col, 9 col Grids), TEXT, GUTTERS, RIGHT -->
+
+<br />
+
 <br />
 <br />
+
+<!-- BEGIN 1 COLUMN MODULE (12 Column Grid), TEXT, FULL -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+       <td>
+	
+       	<h1>12 Column Grid: Custom Modules</h1>
+		<p>These 3 modules to not have default widths on their &lt;td&gt; elements.  You can customize them however you would like. To stay within the guidlines of the 600 grid system, each column should be a multiple of 30 with 10px gutters on each side.</p>
+		<br />
+         
+       </td>
+    </tr>
+</table>
+<!-- END 1 COLUMN MODULE (12 Column Grid), TEXT, FULL  -->
+
+
+<!-- BEGIN 3 COLUMN MODULE (Custom), TEXT, GUTTERS -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="10">&nbsp;</td>
+       	<td width="XXX" valign="top">
+		3 COLUMN MODULE (Custom), TEXT, GUTTERS
+
+       	</td>
+		<td width="20">&nbsp;</td>
+		<td width="XXX" valign="top">
+		3 COLUMN MODULE (Custom), TEXT, GUTTERS
+
+       	</td>
+		<td width="20">&nbsp;</td>
+		<td width="XXX" valign="top">
+		3 COLUMN MODULE (Custom), TEXT, GUTTERS
+
+       	</td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 3 COLUMN MODULE (Custom), TEXT, GUTTERS   -->
+
+<br />
+
+<!-- BEGIN 4 COLUMN MODULE (Custom), TEXT, GUTTERS -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="10">&nbsp;</td>
+       	<td width="XXX" valign="top">
+		4 COLUMN MODULE (Custom), TEXT, GUTTERS
+
+       	</td>
+		<td width="20">&nbsp;</td>
+		<td width="XXX" valign="top">
+		4 COLUMN MODULE (Custom), TEXT, GUTTERS
+
+       	</td>
+		<td width="20">&nbsp;</td>
+		<td width="XXX" valign="top">
+		4 COLUMN MODULE (Custom), TEXT, GUTTERS
+
+       	</td>
+		<td width="20">&nbsp;</td>
+		<td width="XXX" valign="top">
+		4 COLUMN MODULE (Custom), TEXT, GUTTERS
+
+       	</td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 4 COLUMN MODULE (Custom), TEXT, GUTTERS   -->
+
+<br />
+
+<!-- BEGIN 5 COLUMN MODULE (Custom), TEXT, GUTTERS -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="10">&nbsp;</td>
+       	<td width="XXX" valign="top">
+		5 COLUMN MODULE (Custom), TEXT, GUTTERS
+
+       	</td>
+		<td width="20">&nbsp;</td>
+		<td width="XXX" valign="top">
+		5 COLUMN MODULE (Custom), TEXT, GUTTERS
+
+       	</td>
+		<td width="20">&nbsp;</td>
+		<td width="XXX" valign="top">
+		5 COLUMN MODULE (Custom), TEXT, GUTTERS
+
+       	</td>
+		<td width="20">&nbsp;</td>
+		<td width="XXX" valign="top">
+		5 COLUMN MODULE (Custom), TEXT, GUTTERS
+
+       	</td>
+		<td width="20">&nbsp;</td>
+		<td width="XXX" valign="top">
+		5 COLUMN MODULE (Custom), TEXT, GUTTERS
+
+       	</td>
+		<td width="10">&nbsp;</td>
+    </tr>
+</table>
+<!-- END 5 COLUMN MODULE (Custom), TEXT, GUTTERS -->
+
+
+<br />
+<br />
+
+<!-- BEGIN 1 COLUMN MODULE (12 Column Grid), TEXT, FULL -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+       <td>
+	
+       	<h1>Sub-Modules</h1>
+		
+		<p>Sub-Modules are not full-width modules.  They go within a &lt;td&gt; tag of the full-width modules and you must adjust their table width to match the width of the parent &lt;td&gt; element.</p>
+		<br />
+		<br />
+         
+       </td>
+    </tr>
+</table>
+<!-- END 1 COLUMN MODULE (12 Column Grid), TEXT, FULL  -->
+
+
 
 <!-- BEGIN 2 COLUMN TABLE -->
 <table width="600" border="0" cellspacing="0" cellpadding="0">
@@ -430,6 +716,17 @@ If image has lines they need to be one color.
 <!-- END 2 COLUMN TABLE  -->
 
 
+
+
+<!-- BEGIN VIEW ONLINE -->
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+       <td align="right" class="view_online">
+         <a href="" target="_blank">View Online</a>
+       </td>
+    </tr>
+</table>
+<!-- END VIEW ONLINE -->
 
 
 <!-- BEGIN FOOTER -->
