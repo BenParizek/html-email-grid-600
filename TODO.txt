@@ -1,0 +1,2 @@
+
+- PNG's with transparency don't display properly on Android 2.2 on Litmus. Any workarounds?  If so, update Icon set.
