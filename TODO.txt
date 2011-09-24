@@ -1,0 +1,3 @@
+
+
+Icon PNGS display with black instead of transparency on Android.  Would converting these to transparent gifs work?
