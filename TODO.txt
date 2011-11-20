@@ -1,2 +1,7 @@
 
+- Setup mobile friendly column treatment for ONE and TWO column templates
+
+- Sort out an easy way or convention in which to add background images in the most reliable way possible.
+
 - PNG's with transparency don't display properly on Android 2.2 on Litmus. Any workarounds?  If so, update Icon set.
+
