@@ -12,18 +12,19 @@
 		/* -----------------------------------------------------------
 		Grid 600: 12 Column Email Template
 		
-		@Author: Ben Parizek
-		@Company: Barrel Strength Design 
+		@Author: 			Ben Parizek
+		@Company: 		Barrel Strength Design 
 		@Company URL: http://barrelstrengthdesign.com
-		License: 
+		@License: 		Creative Commons Attribution-ShareAlike 3.0 Unported License
+						 			href="http://creativecommons.org/licenses/by-sa/3.0/	
 		
-		Props: 
-		CM Monitor
-		Mailchimp
-		HTML Email Boilerplate
-		
-		Icons by Aquaticus_Social_by_jwloh whose site seems to be dead 
-		but left us with these fine icons!
+		Props & Inspiration:
+		Scott Lyttle: Grid Design Direction
+		Campaign Monitor: http://www.campaignmonitor.com/
+		Mailchimp: http://mailchimp.com/
+		HTML Email Boilerplate: http://htmlemailboilerplate.com/
+		Litmus: http://litmus.com/				
+		Icons by Aquaticus_Social_by_jwloh whose site seems to be dead
 		----------------------------------------------------------- */
 		
 		/* -----------------------------------------------------------
@@ -58,57 +59,11 @@
 								/* Prevent Webkit and Windows Mobile platforms from changing default font sizes. */
 
 		table td 		{ border-collapse: collapse; } /* Fix Outlook 07, 10 Padding issue */
-		img 				{ display: block; } /* Gmail/Hotmail image display fix */
-
-
-		/**************************************************
-		 Hotmail header color reset
-		 @TODO These colors may need to be adjusted by the user
-					 so plan that into the documentation accordingly
-
-		h1, h2, h3, h4, h5, h6 {
-        color: black !important;
-        line-height: 100% !important;
-    }
-    
-    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-        color: blue !important;
-    }
-    
-    h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
-        color: red !important;
-    }
-    
-    h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
-        color: purple !important;
-    }
-		***************************************************/
 		
-		/**************************************************
-		 @TODO Consider adding the HTML Email Boilerplate Yahoo short cut code
-					 Be careful here, as somebody will need to adjust the colors and override these
-					 to use this right...
-					 Consider the MailChimp way below, or somehow set a standard for how all LINK tags
-					 are treated to cover the necessary baseline we want.
-					
-		 http://www.responsys.com/blogs/nsm/2010/07/feeling-blue-over-yahoo-email.html
-
-	   .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none !important; border-bottom: none !important; background: none !important; }
-
-			a span { override link color here ? by coloring the span? }
-			
-			
-			MAILCHIMP uses somthing a little different:
-			
-			a .yshortcuts, Yahoo! Mail Override 
-			a:visited, 		 Yahoo! Mail Override  
-			a:link {
-				color:#336699;
-				font-weight:normal;
-				text-decoration:underline;
-			}
-			
-		***************************************************/
+		/* Gmail/Hotmail image display fix
+		 	 If you need a particular image to display inline, override this below */
+		img 				{ display: block; } 
+		
 
 		/* -----------------------------------------------------------
 		Grid System a la HTML Emails using Tables
@@ -116,6 +71,16 @@
 
 		Apply these col-X classes to <td> tags.  These tags are already
 		applied to the snippets in the grid-600 default template.
+		
+		Provide your designer with the accomanying photoshop files to make
+		developing with the grid even easier! (revised Photoshop files in the works)
+			
+		Email Designs with borders.  If you want your email design to have a border, I 
+		recommend breaking from the 600px format and adding the border to the outside
+		of the 600px grid. This allows us to retain the grid and avoid confusing
+		calculations and funny sizes.  So, a grid with a 1px border would be easiest to
+		achieve as a 600px grid + a 1px border on the left and right, resulting in an email
+		602px	wide. A 600px grid with a 5px border would result in an email 610px wide.
 		----------------------------------------------------------- */
 		
 		/* Choose a grid based on your needs */
@@ -192,9 +157,6 @@
 		.col-12 { width: 560px; }*/
 		
 		
-		/* Also Add GRIDS of 598 px that plan for a 1px border */
-		
-		
 		/* col-12-wow overrides col-12 class and creates a full 600px
 		   table with no padding.  This class can be used with any grid */
 		.col-12-wow {
@@ -233,11 +195,6 @@
 		/* 	Use the lonely-image class on a td tag when it only contains
 		   	an image and nothing else. Fixes an irrational Outlook spacing bug. */
 		td.lonely-image img { font-size:0px; line-height:0px; }
-		
-		/* tar = Text Align Right 
-			 align inline <td> or <p> tag content to the right
-		   a little specific but I find this class useful. */
-		td.tar, td p.tar { text-align: right; }
 	
 	
 		/* -----------------------------------------------------------

@@ -86,3 +86,8 @@ A PSD Template which hopes to integrate a reminder of the
 limits and trade-offs of emails into the design process and provide
 designers with the various grid options we can easily code for.
 
+
+### License
+Creative Commons Attribution-ShareAlike 3.0 Unported License
+href="http://creativecommons.org/licenses/by-sa/3.0/
+
