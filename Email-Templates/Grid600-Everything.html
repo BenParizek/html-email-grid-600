@@ -48,7 +48,7 @@
 		h4, h5, h6	{ margin:0; padding:0; }
 		a:hover, 
 		a:active 		{ outline: none; }
-		img 				{ border:0; line-height:100%; outline:none; text-decoration:none; }
+		img 				{ border:0; line-height:100%; outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
 
 		#outlook a 	{ padding: 0; } /* Force Outlook to provide a "view in browser" button. */
 	  body 			 	{ width: 100% !important; } /* Force Hotmail to display emails at full width */
@@ -58,12 +58,7 @@
 	  body 				{ -webkit-text-size-adjust: none; -ms-text-size-adjust: none; } 
 								/* Prevent Webkit and Windows Mobile platforms from changing default font sizes. */
 
-		table td 		{ border-collapse: collapse; } /* Fix Outlook 07, 10 Padding issue */
-		
-		/* Gmail/Hotmail image display fix
-		 	 If you need a particular image to display inline, override this below */
-		img 				{ display: block; } 
-		
+		table td 		{ border-collapse: collapse; } /* Fix Outlook 07, 10 Padding issue */		
 
 		/* -----------------------------------------------------------
 		Grid System a la HTML Emails using Tables
@@ -192,9 +187,9 @@
 		/* 	Set width of bullet column of a table-based bulleted list */
 		td.bullet { width:20px; }
 
-		/* 	Use the lonely-image class on a td tag when it only contains
-		   	an image and nothing else. Fixes an irrational Outlook spacing bug. */
-		td.lonely-image img { font-size:0px; line-height:0px; }
+
+		/* Gmail/Hotmail add an extra space below images.  This fixes it. */
+		.image-fix { display:block; }
 	
 	
 		/* -----------------------------------------------------------
@@ -218,11 +213,26 @@
 			background-color: #fff;
 		}
 
-		/* Set your header font-styles here */
+		a {
+			color: #0000FF;
+		}
+		
+		/* If any links appear in your copy that aren't supposed to be links
+		   you may still need to make them links and give them color because
+		   certain email clients will render them blue and make them links anyways
+		
+		a.link-fix {
+			color: #999;
+		}
+		
+		*/
+		
+		/* Set your header font-styles here
 		h1, .h1 { font-family: arial; font-size:20px; line-height:22px; }
 		h2, .h2 { font-family: arial; font-size:18px; line-height:20px; }
 		h3, .h3 { font-family: arial; font-size:13px; line-height:17px; }
-		h4, .h4 {  }
+		h4, .h4 { ... }
+		*/
 		
 		/* Set your body fonts styles here */
 		td, td p { 
@@ -253,6 +263,17 @@
 		/* Don't forget! */
 		.view-online { }
 		.unsubscribe { }
+		
+		
+		/* Pretty up the area which is seen before your images are downloaded 
+			 apply these styles to your img tags with the right colors
+			 (note: you may have to apply these to td tags, need to confirm...)
+			
+		.img-bg { background-color: #666; }
+		.img-txt { color: #fff; font-size: 12px; }
+		
+		*/
+		
 		
 
 		/* -----------------------------------------------------------
