@@ -90,7 +90,3 @@ designers with the various grid options we can easily code for.
 ### License
 [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/)
 
-
-
-
-
