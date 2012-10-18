@@ -1,0 +1,591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Grid 600: 12 Column Template</title>
+
+  <script type="text/javascript" src="../assets/js/jquery.js"></script>
+
+  <style type="text/css" media="screen">
+      
+    /* -----------------------------------------------------------
+    Grid 600: 12 Column Email Template
+    
+    @Author:      Ben Parizek
+    @Company:     Barrel Strength Design 
+    @Company URL: http://barrelstrengthdesign.com
+    @License:     Creative Commons Attribution-ShareAlike 3.0 Unported License
+                  href="http://creativecommons.org/licenses/by-sa/3.0/    
+    
+    Props & Inspiration:
+    Scott Lyttle: Grid Design Direction
+    Campaign Monitor: http://www.campaignmonitor.com/
+    Mailchimp: http://mailchimp.com/
+    HTML Email Boilerplate: http://htmlemailboilerplate.com/
+    Litmus: http://litmus.com/              
+    Icons by Aquaticus_Social_by_jwloh whose site seems to be dead
+    ----------------------------------------------------------- */
+    
+    /* -----------------------------------------------------------
+    Some email clients (ahem, Gmail) will strip out the css in your <head> section
+    Be sure your final email places the css inline using a tool like: http://premailer.dialect.ca/ 
+    ----------------------------------------------------------- */
+    
+    /* -----------------------------------------------------------
+    HTML Email Reset CSS
+    Email clients interpret the default styles of some elements differently
+    These styles try to create a common baseline for us to start from.
+    
+    If you are troubleshooting an email and learn that one of these styles
+    is causing a problem, try to override it below in the specific area
+    that you are having the problem.  If that doesn't work, hack away and
+    let me know what you find out!
+    ----------------------------------------------------------- */
+    
+    body, p, a, 
+    h1, h2, h3, 
+    h4, h5, h6  { margin:0; padding:0; }
+    a:hover, 
+    a:active    { outline: none; }
+    img         { border:0; line-height:100%; outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
+
+    #outlook a  { padding: 0; } /* Force Outlook to provide a "view in browser" button. */
+    body        { width: 100% !important; } /* Force Hotmail to display emails at full width */
+                .ReadMsgBody { width: 100%; } 
+                .ExternalClass { width: 100%; } 
+
+    body        { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; } 
+                            /* Prevent Webkit and Windows Mobile platforms from changing default font sizes. */
+
+    table td    { border-collapse: collapse; } /* Fix Outlook 07, 10 Padding issue */       
+
+    /* -----------------------------------------------------------
+    Grid System a la HTML Emails using Tables
+    Choose which grid you want to use: 3020, 2030, 1436, or 1040
+
+    Apply these col-X classes to <td> tags.  These tags are already
+    applied to the snippets in the grid-600 default template.
+    
+    Provide your designer with the accomanying photoshop files to make
+    developing with the grid even easier! (revised Photoshop files in the works)
+        
+    Email Designs with borders.  If you want your email design to have a border, I 
+    recommend breaking from the 600px format and adding the border to the outside
+    of the 600px grid. This allows us to retain the grid and avoid confusing
+    calculations and funny sizes.  So, a grid with a 1px border would be easiest to
+    achieve as a 600px grid + a 1px border on the left and right, resulting in an email
+    602px   wide. A 600px grid with a 5px border would result in an email 610px wide.
+    ----------------------------------------------------------- */
+    
+    /* Choose a grid based on your needs */
+    /* 
+        GRID 3020
+        Columns: 30px
+        Gutters: 20px (Left & Right Gutters: 10px)
+    */
+
+    .col-3, .col-4, .col-6, 
+    .col-8, .col-9, .col-12 {
+        padding-left:  10px;
+        padding-right: 10px;
+    }
+    .col-3  { width: 130px; }
+    .col-4  { width: 180px; }
+    .col-6  { width: 280px; }
+    .col-8  { width: 400px; }
+    .col-9  { width: 430px; }
+    .col-12 { width: 580px; }
+    
+    
+    /* 
+        GRID 2030
+        Columns: 20px
+        Gutters: 30px (Left & Right Gutters: 15px)
+    */
+    /*
+    .col-3, .col-4, .col-6, 
+    .col-8, .col-9, .col-12 {
+        padding-left:  15px;
+        padding-right: 15px;
+    }
+    .col-3  { width: 100px; }
+    .col-4  { width: 170px; }
+    .col-6  { width: 270px; }
+    .col-8  { width: 370px; }
+    .col-9  { width: 420px; }
+    .col-12 { width: 570px; }*/
+            
+    /* 
+        GRID 1436
+        Columns: 14px
+        Gutters: 36px (Left & Right Gutters: 18px)
+    */
+    /*
+    .col-3, .col-4, .col-6, 
+    .col-8, .col-9, .col-12 {
+        padding-left:  18px;
+        padding-right: 18px;
+    }
+    .col-3  { width: 114px; }
+    .col-4  { width: 164px; }
+    .col-6  { width: 264px; }
+    .col-8  { width: 364px; }
+    .col-9  { width: 414px; }
+    .col-12 { width: 564px; }*/
+    
+    /* 
+        GRID 1040
+        Columns: 10px
+        Gutters: 40px (Left & Right Gutters: 20px)
+    */
+    /*      
+    .col-3, .col-4, .col-6, 
+    .col-8, .col-9, .col-12 {
+        padding-left:  20px;
+        padding-right: 20px;
+    }
+    .col-3  { width: 110px; }
+    .col-4  { width: 160px; }
+    .col-6  { width: 260px; }
+    .col-8  { width: 360px; }
+    .col-9  { width: 410px; }
+    .col-12 { width: 560px; }*/
+    
+    
+    /* col-12-wow overrides col-12 class and creates a full 600px
+       table with no padding.  This class can be used with any grid */
+    .full-width {
+      padding-left:  0;
+      padding-right: 0;
+      width: 600px;
+    }
+    
+
+    /* -----------------------------------------------------------
+    Utility Styles
+    This section helps give us a baseline by standardizing several 
+    elements that behave in slightly different ways.  You can
+    edit some styles in this section if you need to change these
+    sizes to fit your needs.  Or you can just override what you need
+    in the next section.
+
+    Set all header, paragraph, and list elements to have same spacing
+    If you want to change the spacing of these elements, change that here.
+    ----------------------------------------------------------- */
+
+    #background-container { height:100% !important; margin:0; padding:0; width:100% !important; }
+
+    /*  Set header tags, p tags and bulleted lists to have the same spacing
+        use p tags for general text content, but not within bulleted lists.
+        Text for bulleted lists can just remain wrapped in the td tags */
+    h1, h2, h3,
+    h4, h5, h6      { display:block; margin-top:12px; }
+    td p            { margin-top: 12px; }
+    td              { padding-bottom:6px; }
+    td.bullet, 
+    td.bullet-item  { padding-top:12px; }
+
+    /*  Set width of bullet column of a table-based bulleted list */
+    td.bullet { width:20px; }
+
+
+    /* Gmail/Hotmail add an extra space below images.  This fixes it. */
+    .image-fix { display:block; }
+
+
+    /* -----------------------------------------------------------
+    Email Specific Styles
+    Begin styling your specific email here.
+    ----------------------------------------------------------- */
+
+    /* sets the global background color */
+    body, #background-container {
+      background-color: #ddd;
+    }
+    
+    /* sets the background color of the 600px wide email area 
+         Also, if your design requires a border around the email, 
+         in order to not destroy the grid, it's easiest to just add
+         a border to this container and make this container wider by 
+         the same amount.  So, if you want a 1px border, make this
+         container 602 pixels.  And all the grid inside it stays happy.
+    */
+    #template-container {
+      background-color: #fff;
+    }
+
+    a {
+      color: #0000FF;
+    }
+    
+    /* If any links appear in your copy that aren't supposed to be links
+       you may still need to make them links and give them color because
+       certain email clients will render them blue and make them links anyways
+    
+    a.link-fix {
+        color: #999;
+    }
+    
+    */
+    
+    /* Set your header font-styles here */
+    h1, .h1 { font-family: arial; font-size:20px; line-height:22px; }
+    /*
+    h2, .h2 { font-family: arial; font-size:18px; line-height:20px; }
+    h3, .h3 { font-family: arial; font-size:13px; line-height:17px; }
+    h4, .h4 { ... }
+    */
+    
+    /* Set your body fonts styles here */
+    td, td p { 
+      font-family: arial;
+      font-size:12px;
+      line-height:18px;
+    }
+    
+    /* if you need more font styles
+         extend them with new font class */
+    td.secondary-font-style, 
+    td.secondary-font-style p {
+      font-family: arial;
+      font-size:12px;
+      line-height:18px;
+    }
+    
+    /* Social Media Icons extend the bullet list */
+    .social-media td.bullet {
+      width:30px;
+    }
+    .social-media td.bullet-item {
+      line-height:14px;
+      padding-top: 5px;
+    }
+
+    /* Don't forget! */
+    .view-online { }
+    .unsubscribe { }
+    
+    
+    /* Pretty up the area which is seen before your images are downloaded 
+         apply these styles to your img tags with the right colors
+         (note: you may have to apply these to td tags, need to confirm...)
+        
+    .img-bg { background-color: #666; }
+    .img-txt { color: #fff; font-size: 12px; }
+    
+    */
+    
+    
+
+    /* -----------------------------------------------------------
+    Mobile Specific Styles
+    Target portrait mode: max-device-width: 480px 
+    Target landscape mode: max-device-width: 720px
+    
+    Make sure the @media queries don't get stripped from the head
+    when you inline your css.  Many inlining programs will strip it out.
+    I think you are safe if you use Campaign Monitor but need to test that.
+    
+    Also, currently Yahoo doesn't ignore @media queries unless you target
+    the styles via attribute selectors such as the class .table on
+    the table element: table[class=table]
+    
+    apply class="mobile-friendly" to all tables that only have a col-12 clas on the <td> tag.
+    ----------------------------------------------------------- */      
+    @media only screen and (max-width: 480px) {
+    
+      td[class="background-container"] { padding:0 10px !important; }
+
+      table[id="template-container"],
+      table[class="mobile-friendly"] {
+        width: 300px !important; 
+      }
+      td[class="col-3"],
+      td[class="col-4"],
+      td[class="col-6"],
+      td[class="col-8"],
+      td[class="col-9"],
+      td[class="col-12"],
+      td[class="col-3"] img,
+      td[class="col-4"] img,
+      td[class="col-6"] img,
+      td[class="col-8"] img,
+      td[class="col-9"] img,
+      td[class="col-12"] img,
+      td[class="full-width"] { 
+          width: 300px !important; 
+      }
+
+      img[class="showcase"]  { 
+          width: 320px !important; 
+      }
+
+    }
+      
+  </style>
+    
+</head>
+<body marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" offset="0">
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" id="background-container">
+    <tr><td valign="top">
+    <!-- BEGIN EMAIL BODY -->
+
+    <!-- BEGIN TEMPLATE CONTAINER -->
+    <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" id="template-container">
+      <tr>
+        <td valign="top" class="template-container">
+
+
+<br />          
+
+<!-- BEGIN 1 COLUMN MODULE (12 Column Grid), TEXT, FULL -->
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-12">
+
+      <h1>600 Grid System • 12 Column Grid</h1>      
+      <h2>Common Symmetrical Layouts</h2>
+
+    </td>
+  </tr>
+</table>
+<!-- END 1 COLUMN MODULE (12 Column Grid), TEXT, FULL -->
+
+<br />
+
+<!-- 
+  BEGIN 1 COLUMN MODULE (12 Column Grid), TEXT, FULL 
+  A "text" module can be used for... text content! 
+  A "full" module is a full 600px wide table with no gutters
+-->
+<table align="left" border="0" cellspacing="0" cellpadding="0" id="code">
+  <tr>
+    <td valign="top" class="col-12">
+      
+      <h3>Banner Module</h3>
+      <p>Full 12 Column Grid, including 10px gutters on the left and right<br />
+      i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i </p>
+
+    </td>
+  </tr>
+</table>
+<!-- END 1 COLUMN MODULE (12 Column Grid), TEXT, FULL  -->
+
+<!-- 
+  BEGIN 1 COLUMN MODULE (12 Column Grid), IMAGE, FULL
+  An "image" module contains an image
+  A "full" module is a full 600px wide table with no gutters
+ -->
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="full-width"><a href="#" target="_blank"><img src="images/blue.gif" width="100%" height="150" border="0" class="showcase" /></a></td>
+  </tr>
+</table>
+<!-- END 1 COLUMN MODULE (12 Column Grid), IMAGE, FULL -->
+
+<br />
+
+<!-- 
+    BEGIN 1 COLUMN MODULE (12 Column Grid), TEXT, GUTTERS
+    A "text" module can be used for text content
+    A "gutters" module is a 580px wide table with 10px gutters on each side
+ -->
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-12">
+
+      <h3>12 Column Grid</h3>
+      <p>i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i </p>   
+
+    </td>
+  </tr>
+</table>
+<!-- END 1 COLUMN MODULE (12 Column Grid), TEXT, GUTTERS -->
+
+<!-- 
+    BEGIN 1 COLUMN MODULE (12 Column Grid), IMAGE, GUTTERS
+    An "image" module contains an image
+    A "gutters" module is a 580px wide table with 10px gutters on each side
+ -->
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td valign="top" class="col-12"><a href="#" target="_blank"><img src="images/blue.gif" width="580" height="150" border="0" alt="" class="image-12" /></a></td>
+    </tr>
+</table>
+<!-- END 1 COLUMN MODULE (12 Column Grid), IMAGE, GUTTERS -->
+
+<br />
+
+<!-- BEGIN 2 COLUMN MODULE (2, 6 Column Grids), TEXT, GUTTERS  -->
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-6">
+                
+      <h3>6 Column Grid</h3>
+      <p>i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i </p>
+   
+    </td>
+  </tr>
+</table>
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-6">
+                
+      <h3>6 Column Grid</h3>
+      <p>i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i </p>
+   
+    </td>
+  </tr>
+</table>
+<!-- END 2 COLUMN MODULE (2, 6 Column Grids), TEXT, GUTTERS -->
+
+<br/>
+
+<!-- BEGIN 2 COLUMN MODULE (2, 6 Column Grids), IMAGE, GUTTERS -->
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-6"><a href="#" target="_blank"><img src="images/blue.gif" width="100%" height="100" border="0" alt="" /></a></td>
+  </tr>
+</table>
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-6"><a href="#" target="_blank"><img src="images/blue.gif" width="100%" height="100" border="0" alt="" /></a></td>
+  </tr>
+</table>
+<!-- END 2 COLUMN MODULE (2, 6 Column Grids), IMAGE, GUTTERS   -->
+
+<br />
+
+<!-- BEGIN 3 COLUMN MODULE (3, 4 Column Grids), TEXT, GUTTERS -->
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-4">
+
+      <h3>3 Column Grid</h3>
+      <p>i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i </p>
+      
+    </td>
+  </tr>
+</table>
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-4">
+
+      <h3>3 Column Grid</h3>
+      <p>i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i </p>
+      
+    </td>
+  </tr>
+</table>
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-4">
+
+      <h3>3 Column Grid</h3>
+      <p>i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i </p>
+      
+    </td>
+  </tr>
+</table>
+<!-- END 3 COLUMN MODULE (3, 4 Column Grids), TEXT, GUTTERS -->
+
+<br/>
+
+<!-- BEGIN 3 COLUMN MODULE (3, 4 Column Grids), IMAGE, GUTTERS -->
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-4"><a href="#" target="_blank"><img src="images/blue.gif" width="100%" height="100" border="0" alt="" /></a></td>
+  </tr>
+</table>
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-4"><a href="#" target="_blank"><img src="images/blue.gif" width="100%" height="100" border="0" alt="" /></a></td>
+  </tr>
+</table>
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-4"><a href="#" target="_blank"><img src="images/blue.gif" width="100%" height="100" border="0" alt="" /></a></td>
+  </tr>
+</table>
+<!-- END 3 COLUMN MODULE (3, 4 Column Grids), IMAGE, GUTTERS -->
+
+<br />
+
+<!-- BEGIN 4 COLUMN MODULE (4, 3 Column Grids), TEXT, GUTTERS -->
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-3">
+        
+      <h3>4 Column Grid</h3>
+      <p>i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i</p>
+      
+    </td>
+  </tr>
+</table>
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-3">
+        
+      <h3>4 Column Grid</h3>
+      <p>i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i</p>
+      
+    </td>
+  </tr>
+</table>
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-3">
+        
+      <h3>4 Column Grid</h3>
+      <p>i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i</p>
+      
+    </td>
+  </tr>
+</table>
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-3">
+        
+      <h3>4 Column Grid</h3>
+      <p>i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i i</p>
+      
+    </td>
+  </tr>
+</table>
+<!-- END 4 COLUMN MODULE (4, 3 Column Grids), TEXT, GUTTERS -->
+
+<!-- BEGIN 4 COLUMN MODULE (4, 3 Column Grids), IMAGE, GUTTERS -->
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-3"><a href="#" target="_blank"><img src="images/blue.gif" width="130" height="100" border="0" alt="" /></a></td>
+  </tr>
+</table>
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-3"><a href="#" target="_blank"><img src="images/blue.gif" width="130" height="100" border="0" alt="" /></a></td>
+  </tr>
+</table>
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-3"><a href="#" target="_blank"><img src="images/blue.gif" width="130" height="100" border="0" alt="" /></a></td>
+  </tr>
+</table>
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" class="col-3"><a href="#" target="_blank"><img src="images/blue.gif" width="130" height="100" border="0" alt="" /></a></td>
+  </tr>
+</table>
+<!-- END 4 COLUMN MODULE (4, 3 Column Grids), IMAGE, GUTTERS -->
+
+        </td>
+      </tr>
+    </table>
+    <!-- END TEMPLATE CONTAINER -->
+
+    <!-- END EMAIL BODY -->
+    </td></tr></table>
+  </body>
+</html>
