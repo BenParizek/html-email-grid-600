@@ -1,7 +1,5 @@
 
-NOTE: Grid 600 has been renamed Table Tennis and the primary repository is now being managed by Barrel Strength Design. 
-
-[Table Tennis HTML Email Framework &rarr;](https://github.com/BarrelStrength/Table-Tennis)
+NOTE: Grid 600 is no longer maintained. If you're still building HTML email, good luck.
 
 ---------------------------------------
 
