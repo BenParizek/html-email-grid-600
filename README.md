@@ -1,5 +1,5 @@
 
-NOTE: Grid 600 is no longer maintained. If you're still building HTML email, good luck.
+_Grid 600 is no longer maintained. If you're still building HTML email, good luck._
 
 ---------------------------------------
 
